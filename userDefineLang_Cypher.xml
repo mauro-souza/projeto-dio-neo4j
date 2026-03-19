@@ -1,0 +1,32 @@
+<NotepadPlus>
+    <UserLang name="Cypher" ext="cypher" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00// 01 02 03// 04</Keywords>
+            <Keywords name="Operators1">( ) , = :</Keywords>
+            <Keywords name="Folders in comment, open">CASE</Keywords>
+            <Keywords name="Folders in comment, close">END</Keywords>
+            <Keywords name="Keywords1">AND AS ASC ASCENDING ASSERT BY CASE COMMIT CONSTRAINT CONTAINS CREATE CSV CYPHER DELETE DESC DESCENDING DETACH DISTINCT DROP ELSE END ENDS EXPLAIN FALSE FIELDTERMINATOR FOREACH FROM HEADERS IN INDEX IS LIMIT LOAD MATCH MERGE NOT NULL ON OPTIONAL OR ORDER PERIODIC PROFILE REMOVE RETURN SCAN SET SKIP START STARTS THEN TRUE UNION UNIQUE UNWIND USING WHEN WHERE WITH XOR</Keywords>
+            <Keywords name="Keywords2">abs acos all allShortestPaths any asin atan atan2 avg ceil coalesce collect cos cot count degrees e endNode exists exp extract filter floor has haversin head id keys labels last left length log log10 lower ltrim max min node nodes none percentileCont percentileDisc pi radians rand range reduce rel relationship relationships replace reverse right round rtrim shortestPath sign sin single size split sqrt startNode stdev stdevp str substring sum tail tan timestamp toFloat toInt trim type upper</Keywords>
+            <Keywords name="Keywords3">+ - * / % ^ &lt;&gt; &lt; &gt; &lt;= &gt;= =~</Keywords>
+            <Keywords name="Delimiters">00&quot; 01\ 02&quot; 03&apos; 04\ 05&apos; 06` 07\ 08` 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="8080FF" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="8080FF" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="800040" bgColor="FFFFFF" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="FF4FFF" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="008080" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="800040" bgColor="FFFFFF" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="0000FF" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="0000FF" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>

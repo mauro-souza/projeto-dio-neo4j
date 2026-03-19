@@ -1,0 +1,243 @@
+{
+  "style": {
+    "font-family": "Nunito Sans",
+    "background-color": "#F2F2F2",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#4C8EDA",
+    "border-width": 0,
+    "border-color": "#000000",
+    "radius": 75,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 20,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "bare",
+    "label-color": "#ffffff",
+    "label-background-color": "#848484",
+    "label-border-color": "#848484",
+    "label-border-width": 3,
+    "label-font-size": 20,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "above",
+    "detail-orientation": "parallel",
+    "arrow-width": 3,
+    "arrow-color": "#848484",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#848484",
+    "type-background-color": "#F2F2F2",
+    "type-border-color": "#848484",
+    "type-border-width": 0,
+    "type-font-size": 21,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#848484",
+    "property-font-size": 20,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": -415.10375999395245,
+        "y": -36.2338271785969
+      },
+      "caption": "Usuario",
+      "style": {
+        "property-font-weight": "bold"
+      },
+      "labels": [],
+      "properties": {
+        "id": "",
+        "nome": "",
+        "username": "",
+        "email": "",
+        "dt_cadastro": ""
+      }
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": -1005.1486207282367,
+        "y": -347.45108664206384
+      },
+      "caption": "Filme",
+      "style": {
+        "property-font-weight": "bold"
+      },
+      "labels": [],
+      "properties": {
+        "id": "",
+        "titulo": "",
+        "ano": "",
+        "duracao": ""
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 243.7727133637211,
+        "y": -369.4950855849208
+      },
+      "caption": "Serie",
+      "style": {
+        "outside-position": "auto",
+        "property-alignment": "colon",
+        "property-font-weight": "bold"
+      },
+      "labels": [],
+      "properties": {
+        "id": "",
+        "titulo": "",
+        "temporada": "",
+        "emProducao": ""
+      }
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": -415.10375999395245,
+        "y": -357.865632323375
+      },
+      "caption": "Pessoa",
+      "style": {
+        "property-font-weight": "bold"
+      },
+      "labels": [
+        "Diretor",
+        "Ator"
+      ],
+      "properties": {
+        "id": "",
+        "nome": "",
+        "dt_nascimento": "",
+        "biografia": ""
+      }
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": -415.10375999395245,
+        "y": -749.8975948406849
+      },
+      "caption": "Genero",
+      "style": {
+        "outside-position": "bottom",
+        "property-font-weight": "bold"
+      },
+      "labels": [],
+      "properties": {
+        "nome": ""
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "type": "ASSISTIU",
+      "style": {
+        "property-font-weight": "bold"
+      },
+      "properties": {
+        "avaliou": ""
+      },
+      "fromId": "n0",
+      "toId": "n1"
+    },
+    {
+      "id": "n2",
+      "type": "ATUOU",
+      "style": {
+        "detail-position": "below",
+        "property-font-weight": "bold"
+      },
+      "properties": {
+        "Personagem": ""
+      },
+      "fromId": "n4",
+      "toId": "n1"
+    },
+    {
+      "id": "n3",
+      "type": "POSSUI_GENERO",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n5"
+    },
+    {
+      "id": "n5",
+      "type": "DIRIGIU",
+      "style": {
+        "property-font-weight": "bold"
+      },
+      "properties": {
+        "função": ""
+      },
+      "fromId": "n4",
+      "toId": "n2"
+    },
+    {
+      "id": "n6",
+      "type": "ASSISTIU",
+      "style": {
+        "property-font-weight": "bold"
+      },
+      "properties": {
+        "avaliou": ""
+      },
+      "fromId": "n0",
+      "toId": "n2"
+    },
+    {
+      "id": "n8",
+      "type": "POSSUI_GENERO",
+      "style": {},
+      "properties": {},
+      "fromId": "n2",
+      "toId": "n5"
+    },
+    {
+      "id": "n9",
+      "type": "DIRIGIU",
+      "style": {
+        "property-font-weight": "bold"
+      },
+      "properties": {
+        "função": ""
+      },
+      "fromId": "n4",
+      "toId": "n1"
+    },
+    {
+      "id": "n10",
+      "type": "ATUOU",
+      "style": {
+        "detail-position": "below",
+        "property-font-weight": "bold"
+      },
+      "properties": {
+        "Personagem": ""
+      },
+      "fromId": "n4",
+      "toId": "n2"
+    }
+  ]
+}
